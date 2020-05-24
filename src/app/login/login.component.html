@@ -1,0 +1,24 @@
+<div class="container offset-sm-4 col-sm-4 mt-3">
+    <div class="card-body cbody">
+        <div class="card-title text-center">
+            Login
+        </div>
+        <div class="card-text">
+            <form [formGroup]="myform" (ngSubmit)="submit()"> 
+                <input type="email" class="form-control btmmargin" placeholder="Enter Your Email" name="email" formControlName="email"/>
+                <div class="alert alert-danger btmmargin" *ngIf="(! myform.controls.email.valid) && myform.controls.email.touched">
+                    Enter a valid Email
+                </div>
+                <input type="password" name="pswd" class="form-control btmmargin" placeholder="Password" formControlName="pswd" />
+                <div class="alert alert-danger btmmargin" *ngIf="(! myform.controls.pswd.valid) && myform.controls.pswd.touched">
+                    Enter a valid Password
+                </div>
+                <button type="submit" class="btn btn-block btn-warning text-center btmmargin">Login</button> 
+            </form>
+            <div class="alert alert-danger" *ngIf="msg.length >0">{{msg}}</div>
+            <div class="text-center mt-3">
+                <a routerLink="/home">Dont have a account? Create One</a>
+            </div>
+        </div>
+    </div> 
+</div>

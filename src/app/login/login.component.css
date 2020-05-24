@@ -1,0 +1,9 @@
+.btmmargin {
+    margin-bottom: 5px;
+}
+.cbody {
+    border:2px solid grey;
+    border-radius:10px;
+    margin-top: "35%";
+    font-weight: "bold";
+}

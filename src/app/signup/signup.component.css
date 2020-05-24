@@ -1,0 +1,13 @@
+.leftdiv {
+    background-color: #2e7cf6;
+    background-image: url("../../assets/Sign-Up-BG-Image.png");
+    font-weight: bold;
+    color:white;
+    font-size: 30px;
+}
+.rightdiv {
+    background-color: #2e7cf6;
+}
+.card {
+    background-color: transparent;
+}
