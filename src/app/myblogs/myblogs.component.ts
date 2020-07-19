@@ -11,6 +11,7 @@ import 'firebase/firestore'
 export class MyblogsComponent implements OnInit {
 user:any
 posts:any[]=[];
+visible=false;
   constructor() {
     this.user=firebase.auth().currentUser;
     this.getPosts();
@@ -21,9 +22,9 @@ posts:any[]=[];
     this.getPosts()
    }
    getPosts() {
-      firebase.firestore().collection("posts").get().then((result)=>{
+      firebase.firestore().collection("posts").where('owner','==',this.user.uid).get().then((result)=>{
         this.posts=result.docs
-        console.log(result.docs)
+        //console.log(result.docs)
       })
    }
 
@@ -32,6 +33,10 @@ posts:any[]=[];
 
   onDelete() {
     this.onPostCreated()
+  }
+  cpswitch() {
+    this.visible=!this.visible;
+    console.log(this.visible);
   }
 
 }

@@ -1,12 +1,12 @@
-<div class="row mt-5">
+<div id="m">
     <div class="col-sm-8 offset-sm-2">
       <h1 *ngIf="post">{{ post.title }}</h1>
-      <div *ngIf="post" [innerHTML]="post.content" ></div>
+      <div *ngIf="post" [innerHTML]="post.content" id="pd"></div>
     </div>
-  </div>
   
-  <div class="row mt-5">
+  <div class="row mt-2">
     <div class="col-sm-8 offset-sm-2">
       <app-comments [postid]="postid"></app-comments>
     </div>
-  </div>
+</div>
+</div>

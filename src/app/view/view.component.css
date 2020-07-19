@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+#m {
+    background-image: url("../../assets/bg5.jpg");
+    background-size:cover;
+    background-color: whitesmoke;
+    position: absolute;
+    right:0px;
+    left:0px;
+    bottom: 0px;
+    top:80px;
+    overflow-y: auto;
+}
+h1 {
+    font-family: "Overpass",sans-serif;
+    font-weight: 500;
+    color:#666666;
+}
+
+#pd {
+    background-color: white;
+    padding:10px;
+    font-family: "Roboto",sans-serif;
+    font-size: 20px;
+}
+

@@ -15,7 +15,7 @@ export class ViewComponent implements OnInit {
     this.postid=this.ar.snapshot.paramMap.get('postid')
     firebase.firestore().collection("posts").doc(this.postid).get().then((data)=> {
       this.post=data.data()
-      console.log(this.post)
+      //console.log(this.post)
     })
   }
 

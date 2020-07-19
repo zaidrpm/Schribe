@@ -21,7 +21,7 @@ submit() {
   let email=this.myform.value.email;
   let pswd=this.myform.value.pswd;
   this.as.login(email,pswd).then((response)=> {
-    this.msg="You have logged in sucker!"
+    this.msg="You have logged in sucessfully!"
   }).catch((error)=>{this.msg=error.message})
 this.r.navigate(['/myblogs'])
 }

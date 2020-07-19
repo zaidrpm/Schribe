@@ -1,0 +1,14 @@
+.btn {
+    width:100%;
+    color:#666666;
+    font-size: 23px;
+    font-weight: bold;
+}
+h1 {
+    font-family: "Overpass",sans-serif;
+    font-weight: 500;
+    color:#666666;
+}
+input {
+    height: 50px;
+}

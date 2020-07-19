@@ -1,3 +1,48 @@
 .vertical-divider {
     border-right:2px solid #ddd;
 }
+#cont {
+    background-image: url("../../assets/bg5.jpg");
+    background-size:cover;
+    background-color: whitesmoke;
+}
+.tjs {
+    font-family: "Overpass",sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #888888;
+}
+.tjsmax {
+    font-size:85px;
+    color:#666666;
+}
+.card {
+    background-color: transparent;
+}
+.txt {
+    font-family: "Overpass",sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+}
+input,button {
+    height:50px;
+}
+
+.stitle {
+    font-size: 45px;
+    color:#666666;
+}
+
+.stxt {
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 500;
+    line-height: 30px;
+}
+.ztxt {
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight:normal;
+    line-height: 25px;
+}

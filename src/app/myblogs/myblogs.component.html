@@ -1,21 +1,19 @@
-<div class="row mb-5">
+<div class="row main">
     <div class="col-sm-3 offset-sm-1">
-  
       <div class="card mt-5">
-        <img class="card-img-top" [src]="user.photoURL">
+        <img class="card-img-top" src="../../assets/dp.jpg">
         <div class="card-body">
           <h4 class="card-title">{{ user.displayName }}</h4>
-          <a routerLink="/edit-profile/{{user.uid}}" class="btn btn-sm btn-primary">Edit Profile</a>
+          <a routerLink="/profile" class="btn btn-sm btn-primary">Edit Profile</a>
         </div>
       </div>
   
     </div>
   
     <div class="col-sm-7">
-      <app-create (postCreated)="onPostCreated()"></app-create>
-  
+      <app-create (postCreated)="onPostCreated()" *ngIf="visible"></app-create>
+      <button class="btn btn-warning" id="bt" (click)="cpswitch()" *ngIf="!visible">Create Post</button>
       <app-post *ngFor="let post of posts" [post]="post" (onDelete)="onDelete()"></app-post>
   
-    </div>
-  
-  </div>
+    </div> 
+</div>

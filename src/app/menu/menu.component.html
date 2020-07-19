@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="border-bottom:3px solid #6ca3f9;">
+<nav class="navbar navbar-expand-lg ">
     <a href="#" class="navbar-brand">
-        <img src="assets/Scribe-Logo.png">
+        <img src="assets/Scribe-Logo2.png">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" 
     data-target="#navid" aria-controls="navid" 
@@ -24,11 +24,11 @@
             </li>
 
             <li class="nav-item right" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse" *ngIf="!loginflag">
-                <button class="btn btn-outline-light px-5 loginoutbt" routerLink="/login">Login</button>
+                <button class="btn btn-outline-light px-5 loginoutbt nav-link" routerLink="/login">Login</button>
             </li>
             
             <li class="nav-item right" *ngIf="loginflag" routerLinkActive="active">
-                <button class="btn btn-outline-light px-5 loginoutbt" routerLink="/login" (click)="signout()">Logout</button>
+                <button class="btn btn-outline-light px-5 loginoutbt nav-link" routerLink="/login" (click)="signout()">Logout</button>
             </li>
         </ul>
     </div> 

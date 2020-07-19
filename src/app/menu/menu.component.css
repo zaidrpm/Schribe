@@ -2,3 +2,12 @@
     margin-left:10px;
     border-radius: 50px;
 }
+.nav-link {
+    color:white;
+    font-weight: bold;
+    font-size: 19px;
+}
+.navbar {
+background-color: #333333;
+/*#a4a392;#373630,#4d4c44,#3e5f58*/
+}
